@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 40px 50px;
+    color: #ffffff;
+}
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+
+.main *{
+    height:80px;
+    width: 80px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle1{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    background-color: red;
+}
+.circle2{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    background-color: blue;
+}
+.circle3{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background-color: green;
+}
+.circle4{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background-color: cyan;
+}
+.circle5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(191, 16, 46);
+}
+.circle6{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(191, 16, 46);
+}
+.circle7{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(191, 16, 46);
+}
+.circle8{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(191, 16, 46);
+}
+.circle9{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(191, 16, 46);
+}

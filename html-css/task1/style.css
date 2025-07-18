@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+.box1{
+    padding: 70px;
+    background-color: red;
+    height: 100%;
+}
+.box2{
+    padding: 50px;
+    background-color: rgb(68, 148, 138);
+    height: 100%;
+}
+.box3{
+    padding: 30px;
+    background-color: rgb(68, 148, 68);
+    height: 100%;
+}
+.box4{
+    padding: 30px;
+    background-color: rgb(68, 148, 83);
+    height: 100%;
+}
+.box5{
+    padding: 30px 50px;
+    background-color: rgb(0, 225, 255);
+    height: 100%;
+}
+.box6{
+    padding: 30px;
+    background-color: rgb(148, 68, 148);
+    height: 100%;
+}
+.box7{
+    padding: 30px;
+    background-color: rgb(143, 148, 68);
+    height: 100%;
+}

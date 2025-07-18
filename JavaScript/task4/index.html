@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImagePreviewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy';
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+        }
+        .main{
+            height: 100%;
+            padding: 20px;
+        }
+        .preview{
+            height: 400px;
+            width: 300px;
+            margin-top: 30px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        .details{
+            margin-top: 10px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="file" name="file" hidden>
+        <button>Select Image</button>
+        <div class="details">
+
+        </div>
+        <div class="preview">
+
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>

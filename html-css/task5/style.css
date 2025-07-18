@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.main nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 50px;
+    border-bottom: 2px solid #000;
+}
+
+.profile-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #000;
+}
+
+.main nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.link {
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    color: #ffffff;
+    padding: 0 40px;
+    height: 91%;
+    width: 100%;
+}
+
+.heading {
+    color: #000;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    height: 88%;
+}
+
+.left,
+.right {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    height: 100%;
+}
+
+.l-top,
+.r-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    height: 40%;
+    width: 100%;
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+}
+
+.r-top,
+.l-bottom {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    gap: 20px;
+}
+
+.l-b-left,
+.l-b-right,
+.r-t-left,
+.r-t-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(151, 95, 21);
+    background-position: center;
+    background-size: cover;
+}
+
+.text p{
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    width: fit-content;
+    background-color: #ffffff;
+}
+
+p {
+    opacity: 0.9;
+}
+
+.l-top {
+    background-image: url(https://images.unsplash.com/photo-1697735854267-0eb338a55a50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXx5bVBLVFJqWU9XOHx8ZW58MHx8fHx8);
+}
+
+.l-b-right {
+    background-image: url(https://images.unsplash.com/photo-1637927235777-d6064fffd022?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnx5bVBLVFJqWU9XOHx8ZW58MHx8fHx8);
+}
+
+.l-b-left {
+    background-image: url(https://images.unsplash.com/photo-1617074172287-f364b77c1e77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTh8eW1QS1RSallPVzh8fGVufDB8fHx8fA%3D%3D);
+}
+
+
+.r-t-left {
+    background-image: url(https://images.unsplash.com/photo-1714088790195-2db1e6ad9792?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTl8eW1QS1RSallPVzh8fGVufDB8fHx8fA%3D%3D);
+}
+
+.r-t-right {
+    background-image: url(https://plus.unsplash.com/premium_photo-1736785381920-836d8ce13a6c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D);
+}
+
+.r-bottom {
+    background-image: url(https://images.unsplash.com/photo-1576853544063-a7e7e72adaa6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D);
+}

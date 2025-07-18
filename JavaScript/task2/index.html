@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>ProductFilter</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Gilroy';
+            }
+
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                min-height: 100%;
+                background-color: #000;
+            }
+
+            .cards {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                width: 60%;
+                margin-top: 20px;
+            }
+
+            .card {
+                border-radius: 10px;
+                overflow: hidden;
+                width: 200px;
+                background-color: rgb(152, 152, 152);
+            }
+
+            .card .image {
+                background-color: #dcdcdc;
+                height: 200px;
+                width: 100%;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .card .text {
+                padding: 20px;
+            }
+
+            .card .text h3 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            #input{
+                width: 250px;
+                height: 30px;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <input type="text"
+                   name=""
+                   id="input"
+                   placeholder="Search"
+                   >
+
+            <div class="cards">
+
+            </div>
+
+            <script src="App.js"></script>
+    </body>
+
+</html>
