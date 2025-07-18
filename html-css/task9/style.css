@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F7;
+}
+
+
+.gradient-text {
+    font-size: 18px;
+    opacity: .9;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block;
+    background: linear-gradient(to right, #007aff, #8e44ad, #e91e63, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delta {
+    color: #ff5722;
+    /* Orange color for the triangle */
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+/* ====================== */
+
+
+/* ------------------------- */
+.main {
+    height: 100%;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+nav {
+    padding: 15px;
+    background-color: #F5F5F7;
+    ;
+}
+
+nav,
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav i {
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: .9;
+}
+
+header p {
+    text-align: center;
+    padding: 16px 0;
+}
+
+header p a {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+/* hero part  */
+
+.hero-text-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    padding-top: 80px;
+    color: #6E6E73;
+
+    /* -------- right div ------ */
+     h1 {
+        font-size: 48px;
+
+        & span {
+            color: #1D1D1F;
+        }
+    }
+
+    /* ----- left div ------ */
+     .h1-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+
+        .h1-r-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .h1-profie {
+                height: 40px;
+                width: 40px;
+                background-color: #000;
+                border-radius: 100%;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .h1-right-text a {
+                text-decoration: none;
+                color: #0066CC;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+.hero-scroll-section {
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    flex-shrink: 0;
+    gap: 30px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* ------ Crads -----  */
+    .h1-card {
+        cursor: pointer;
+
+        /* ----- card image ------  */
+        & .h1-image {
+            height: 80px;
+            width: 120px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        /* ------ card text -----  */
+
+         h4 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    }
+}
+
+/* ---------- Common Sections Style ---------- */
+
+.section {
+
+    h2 {
+        font-size: 28px;
+        color: #6E6E73;
+        padding: 0 120px;
+        padding-top: 10px;
+
+        span {
+            color: #000;
+        }
+    }
+
+     .section1 {
+        h2 {
+            padding-top: 60px;
+        }
+    }
+
+    /* section cards  */
+    .s-cards {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        overflow-x: scroll;
+        padding: 10px 120px;
+        padding-bottom: 50px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Common card styles */
+        .s-card {
+            flex-shrink: 0;
+            border-radius: 15px;
+            background-color: #BAADAD;
+            transition: all ease .2s;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 100%;
+
+            }
+
+            .textDiv {
+                height: 100%;
+                width: 100%;
+                padding: 50px 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                h3 {
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                    color: #1D1D1F;
+                }
+                p2 {
+                    margin-bottom: 10px;
+                    color: #1D1D1F;
+                    opacity: .9;
+                }
+            }
+        }
+
+        .s-card:hover {
+            scale: 1.02;
+        }
+    }
+}
+
+
+/* ---------- Section 1---------- */
+.section1 .s1-card {
+    height: 470px;
+    width: 370px;
+}
+
+/* ---------- Section 2---------- */
+.section2 .s2-card {
+    height: 430px;
+    width: 420px;
+}
+
+/* ---------- Section 3 -------- */
+.section3 .s3-card {
+    height: 280px;
+    width: 340px;
+}
+
+/* ---------- Section 4-------- */
+.section4 .s4-card {
+    height: 480px;
+    width: 320px;
+}
+
+.sw-card {
+    height: 480px;
+    width: 400px;
+}
+
+/* ---------- Section 5-------- */
+.section5 .s5-card {
+    height: 480px;
+    width: 320px;
+}
+
+.sw-card {
+    height: 480px;
+    width: 400px;
+}
+
+/* ---------- Section 6 ---------- */
+.section6 .s6-card {
+    height: 480px;
+    width: 500px;
+}
+
+/* ---------- Section 7  ---------- */
+.section7 .s7-card {
+    height: 480px;
+    width: 400px;
+}
+
+/* ##################################################################### */
+
+/* ---------- Quick Links -------  */
+.quick-links {
+    height: 100%;
+    padding: 20px 120px;
+}
+
+.quick-links h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.q-links a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 5px 16px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    color: #000;
+    font-weight: 400;
+}
+
+.quick-links .paragraph {
+    padding: 40px 140px;
+    border-bottom: 1px solid #24242497;
+}
+
+.quick-links .paragraph p {
+    font-size: 12px;
+    opacity: .7;
+    margin-top: 15px;
+}
+
+/* -------- Footer Section -------  */
+footer {
+    height: 70%;
+    padding: 0px 120px;
+}
+
+footer h4 {
+    font-size: 14px;
+    color: #6E6E73;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer h4 i {
+    cursor: pointer;
+}
+
+footer h3 {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.f-alli-links {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-b {
+    color: #717176;
+}
+
+.f-links a {
+    text-decoration: none;
+    color: #717176;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.f-b>p {
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.f-b p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.f-last {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #8a8a8a98;
+    padding: 10px 0;
+}
+
+.f-last a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 12px;
+}
+
+.f-last>div {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* ------ Universal  modified------- */
+
+.white {
+    color: #0000;
+}
+
+.black {
+    color: #000;
+}
+
+.brn {
+    color: #B64400;
+}
+
+/* ------ modified div -----    */
+
+.textDiv-m {
+                height: 100%;
+                width: 100%;
+                padding: 25px;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                h3 {
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                    color: #1D1D1F;
+                }
+                p2 {
+                    margin-bottom: 10px;
+                    color: #1D1D1F;
+                    opacity: .9;
+                }
+            }
+
+
+.small{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: .8;
+    margin-bottom:8px;
+}

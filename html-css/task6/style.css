@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* ---- universal ----- */
+.container {
+    padding: 0 50px;
+}
+
+/* ----------------------- */
+.main {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav .link a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+    color: #000;
+    margin-left: 50px;
+}
+nav .logo i{
+    font-size: 32px;
+}
+.hero {
+    height: 91.79%;
+    border: 1px solid transparent;
+    background-image: url("https://genuineguidegear.com/cdn/shop/collections/performance-touring-645015.jpg?v=1703291051&width=1800");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hero h1 {
+    margin-top: 140px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.hero h1 span {
+    font-weight: 600;
+    font-size: 100px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.hero .buttons {
+    margin-top: 40px;
+}
+
+.hero .buttons .btn-primary {
+    padding: 15px 25px;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.hero .buttons .btn-secondary {
+    color: #000;
+}
+
+/* ----------- section1 ------------ */
+.section1 {
+    padding: 60px 40px;
+}
+
+.s1-text h2,
+.s2-left h2 {
+    /*s1+s2 h2*/
+    font-size: 58px;
+}
+
+.s1-text p,
+.s2-left p {
+    /*s1+s2 p*/
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+/* **** cards ***** */
+.s1-cards {
+    margin-top: 40px;
+    display: flex;
+}
+
+.s1-card i {
+    font-size: 50px;
+}
+
+.s1-card h3 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.s1-card p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    width: 70%;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+/* **************** */
+
+.section1 a {
+    display: block;
+    margin-top: 60px;
+    color: #1b1b1b;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+
+/* -------- section2 -------- */
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 40px 40px;
+    background-color: #F5F5F5;
+}
+
+.s2-left {
+    width: 70%;
+    height: 100%;
+}
+
+.s2-text {
+    padding: 30px 0;
+    display: flex;
+}
+
+.s2-text .box {
+    padding-top: 20px;
+}
+
+.s2-text .box p {
+    width: 80%;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    opacity: 0.7;
+}
+
+.section2 h3 {
+    margin-top: 20px;
+}
+
+.s2-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #FFFFFF;
+    box-shadow: #8f8f8f70 2px 2px 5px;
+}
+
+.s2-right h3 {
+    font-size: 22px;
+}
+
+.s2-right .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo i{
+    font-size: 75px;
+}
+
+.s2-right p {
+    width: 80%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.s2-right button {
+    padding: 15px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.s2-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.s2-right input[type="text"],
+.s2-right input[type="email"] {
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.tick {
+    margin-top: 10px;
+}
+
+/* ------- footer ------- */
+
+footer{
+    display: flex;
+    padding: 20px 40px;
+}
+.f-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 40%;
+
+}
+.f-left i{
+    font-size: 60px;
+}
+.f-left p{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.f-right{
+    background-color: rgb(39, 39, 123);
+}
+.d-top {
+    padding: 40px 0;
+}
+.d-top h4{
+    margin-bottom: 10px;
+}
+
+.d-middle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.d-middle li{
+    list-style: none;
+}
+.d-middle h4{
+    margin-bottom: 20px;
+}
+.d-middle a{
+    margin-bottom: 10px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}

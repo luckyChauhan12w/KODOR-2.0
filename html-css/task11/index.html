@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              href="./src/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+              rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            @media (max-width: 500px) {
+                .hide-under-500 {
+                    display: none;
+                }
+            }
+        </style>
+
+        <title></title>
+    </head>
+
+    <body>
+        <main>
+            <header class="sticky top-0 w-full z-50">
+
+                <div class="bg-linear-to-r from-[#0B79FC] to-[#7F40F3] flex justify-center">
+                    <h3 class="text-white p-3 font-semibold ">Flutter is back at Google I/O! Watch keynotes & sessions →
+                    </h3>
+                </div>
+
+                <nav class="flex justify-between px-4 lg:px-8 py-6 bg-white">
+                    <img class="h-8"
+                         src="https://storage.googleapis.com/cms-storage-bucket/flutter-logo.6a07d8a62f4308d2b854.svg"
+                         alt="">
+                    <div class="space-x-10 hide-under-500">
+                        <a href=""
+                           class="font-semibold opacity-70">Multi-Platform</a>
+                        <a href=""
+                           class="font-semibold opacity-70">Development</a>
+                        <a href=""
+                           class="font-semibold opacity-70">Ecosystem</a>
+                        <a href=""
+                           class="font-semibold opacity-70">Showcase</a>
+                        <a href=""
+                           class="font-semibold opacity-70">Docs</a>
+                        <i class="ri-search-line"></i>
+                        <a href=""
+                           class="py-2 px-8 text-white font-semibold bg-blue-600 rounded-full">Get started</a>
+                    </div>
+
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 class="h-6 w-6"
+                                 fill="none"
+                                 viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div id="hero w-full"
+                 class="bg-linear-to-bl to-[#feeff6] from-[#F3FCFF]">
+
+                <div class="flex flex-col md:flex-row w-full">
+                    <div class="w-full md:w-1/2 flex items-center justify-center px-4 py-8">
+                        <h1 class="text-4xl md:text-7xl font-bold opacity-90 text-center md:text-left">A strong <br>
+                            ecosystem, <br> powered by <br> open source</h1>
+                    </div>
+                    <div class="w-full md:w-1/2 p-8 md:p-20 flex justify-center">
+                        <img src="https://storage.googleapis.com/cms-storage-bucket/strong-ecosystem-open-source.7c6e6c7e94f4f0689ae0.png"
+                             alt=""
+                             class="w-full">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center px-4 py-12">
+                    <h1 class="text-xl md:text-4xl text-center">From packages and plugins to friendly developers, find
+                        all <br class="hidden md:block"> of the
+                        resources you need to be
+                        successful with Flutter.
+                    </h1>
+                </div>
+            </div>
+
+
+            <section class="p-4 lg:p-20 space-y-6 items-center justify-center gap-20 lg:gap-20 lg:flex">
+
+                <div class="card w-full lg:w-96 border-t-4 border-[#E8EAED]">
+                    <h2 class="text-3xl font-semibold pb-5 pt-4">Community</h2>
+                    <p class="text-[18px] mb-12">Join developers around the world who are building with Flutter.</p>
+                    <div>
+                        <img class="w-full"
+                             src="https://storage.googleapis.com/cms-storage-bucket/community.e90928160cc43359f8f6.jpg"
+                             alt="">
+                    </div>
+                </div>
+                <div class="card w-full lg:w-96 border-t-4 border-[#E8EAED]">
+                    <h2 class="text-3xl font-semibold pb-5 pt-4">Events</h2>
+                    <p class="text-[18px] mb-12">Learn about the latest Flutter developments at our global events.</p>
+                    <div>
+                        <img class="w-full"
+                             src="https://storage.googleapis.com/cms-storage-bucket/events.bb151b932844205ac418.jpg"
+                             alt="">
+                    </div>
+                </div>
+                <div class="card w-full lg:w-96 border-t-4 border-[#E8EAED]">
+                    <h2 class="text-3xl font-semibold pb-5 pt-4">Packages</h2>
+                    <p class="text-[18px] mb-12">Find open source packages to help you build powerful Flutter apps.</p>
+                    <div>
+                        <img class="w-full"
+                             src="https://storage.googleapis.com/cms-storage-bucket/packages.aa60c7e0fff5f6fdbda7.png"
+                             alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="px-5 lg:flex lg:p-20 lg:px-40 justify-between">
+                <div class="flex items-start justify-center flex-col mb-3">
+                    <h4 class="text-2xl font-semibold">Community</h4>
+                    <h1 class="text-6xl py-6 font-semibold">Get involved</h1>
+                    <p class="text-sm lg:text-xl lg:w-[500px] mb-8 opacity-70">Connect with Flutter developers around
+                        the world, find
+                        answers, and contribute to the framework in our welcoming community spaces.</p>
+                    <div class="space-x-5">
+                        <button class="px-6 py-2 border-1 rounded-full text-blue-800 font-semibold cursor-pointer">Join
+                            the community</button>
+                        <a href=""
+                           class="font-light lg:font-semibold">More about Flutter culuter</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/community-get-involved.c6d00c92ea8465787105.png"
+                         alt="">
+                </div>
+            </section>
+
+            <section
+                     class="p-5 space-y-6 lg:flex lg:p-20 lg:px-40 justify-between bg-linear-to-bl from-[#F5FBFE] to-[#FCFCE2]">
+                <div class="w-80 lg:w-120">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/consultants.5ed8ae4a516b4433fc75.png"
+                         alt="">
+                </div>
+                <div class="flex items-start justify-center flex-col">
+                    <h4 class="text-2xl font-semibold">Consultants</h4>
+                    <h1 class="text-6xl py-6 font-semibold">Find a Flutter <br> consultant</h1>
+                    <p class="text-xl mb-8 opacity-70">Find trusted Flutter partners. <br> We vet the partners listed in
+                        the directory to verify their record of <br> successful Flutter projects, a sufficient number of
+                        <br> skilled developers on staff, and their commitment to <br> growing the Flutter community.
+                    </p>
+
+                    <button class="px-6 py-2 border-1 rounded-full text-blue-800 font-semibold cursor-pointer">Find
+                        Consultants</button>
+
+                </div>
+            </section>
+
+
+            <section class="p-5 lg:flex lg:p-20 lg:px-40 justify-between">
+
+                <div class="flex items-start justify-center flex-col">
+                    <h4 class="text-2xl font-semibold">Events</h4>
+                    <h1 class="text-6xl py-6 font-semibold">Everyone is <br> invited</h1>
+                    <p class="text-xl mb-8 opacity-70">View upcoming events and see all of the latest talks <br> and
+                        announcements from previous events.</p>
+
+                    <button class="px-6 py-2 border-1 rounded-full text-blue-800 font-semibold cursor-pointer">See
+                        Events</button>
+
+                </div>
+                <div class="h-80 lg:w-120">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/everyone-is-invited.6f183a9db312d0e1b535.png    "
+                         alt="">
+                </div>
+            </section>
+
+
+            <section class="p-5 lg:flex lg:p-20 lg:px-40 justify-between bg-linear-to-bl from-[#F5FBFE] to-[#FCFCE2]">
+                <div class="h-80 lg:w-120">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/packages-integrations.9e16544e02c158492997.png"
+                         alt="">
+                </div>
+                <div class="flex items-start justify-center flex-col">
+                    <h4 class="text-2xl font-semibold">Packages & Integrations</h4>
+                    <h1 class="text-6xl py-6 font-semibold">Find what you <br> need on pub.dev</h1>
+                    <p class="text-xl mb-8 opacity-70">Browse over 20,000 packages, plugins, and <br> integrations for
+                        custom UI components, <br> authentication solutions, state management <br> libraries, and more.
+                    </p>
+
+                    <button class="px-6 py-2 border-1 rounded-full text-blue-800 font-semibold cursor-pointer">Explore
+                        Packages</button>
+
+                </div>
+            </section>
+
+            <section class="p-5 lg:p-20 lg:px-40 text-white">
+                <div
+                     class="h-80 rounded-4xl bg-[#042449] flex flex-col items-start lg:justify-center lg:px-30 p-10 gap-10 lg:gap-5">
+                    <h1 class="text-2xl lg:text-6xl font-semibold">Get started</h1>
+                    <p>Instant access to the power of the Flutter framework</p>
+                    <div class="space-x-5">
+                        <button
+                                class="px-6 py-2 bg-white rounded-full text-blue-600 font-semibold cursor-pointer">Install</button>
+                        <a href=""
+                           class="font-semibold">Read the docs</a>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <footer class="bg-gray-50 text-gray-800 px-8 py-12">
+                <div class="max-w-7xl mx-auto">
+
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start space-y-10 md:space-y-0">
+
+                        <div class="flex-shrink-0">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+                                 alt="Flutter Logo"
+                                 class="h-8 mb-4">
+
+                            <div class="flex space-x-4 mt-6 text-gray-600">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-medium"></i></a>
+                                <a href="#"><i class="fas fa-m"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
+
+                            <div>
+                                <h4 class="font-semibold mb-2">About Flutter</h4>
+                                <ul class="space-y-1">
+                                    <li><a href="#"
+                                           class="hover:underline">Careers</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">News</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Brand</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Culture</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div>
+                                <h4 class="font-semibold mb-2">Learn Flutter</h4>
+                                <ul class="space-y-1">
+                                    <li><a href="#"
+                                           class="hover:underline">Learning Journey</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Codelabs</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Samples</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Cookbook</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div>
+                                <h4 class="font-semibold mb-2">Multi-Platform</h4>
+                                <ul class="space-y-1">
+                                    <li><a href="#"
+                                           class="hover:underline">Mobile</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Web</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Desktop</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">Embedded</a></li>
+                                    <li><a href="#"
+                                           class="hover:underline">iOS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="my-8 border-gray-200">
+
+                    <div class="flex flex-col md:flex-row justify-between text-sm text-gray-500">
+                        <p>
+                            Except as otherwise noted, this work is licensed under a Creative Commons Attribution 4.0
+                            International License, and code samples are licensed under the BSD License.
+                        </p>
+                        <div class="flex space-x-4 mt-4 md:mt-0">
+                            <a href="#"
+                               class="hover:underline">Terms</a>
+                            <a href="#"
+                               class="hover:underline">Privacy</a>
+                            <a href="#"
+                               class="hover:underline">Security</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+        </main>
+
+    </body>
+
+</html>
