@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title> TabsUIwithDynamicContent</title>    
+        <style>
+            div {
+                display: none;
+            }
+
+            .active {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button data-target="about">About</button>
+        <button data-target="projects">Project</button>
+        <button data-target="contact">Contact</button>
+
+        <section class="parent">
+            <div id="about"
+                 class="active">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sit placeat enim dicta vero
+                    repellendus vitae itaque id labore beatae excepturi autem qui corrupti inventore voluptas velit
+                    libero eveniet blanditiis nemo aspernatur consequuntur esse, dolorem commodi. Fugiat tempore
+                    praesentium rerum!</p>
+            </div>
+            <div id="projects"
+                 class="project">
+                <h2>Project</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolores facilis iste aspernatur
+                    sit similique omnis, velit, accusantium voluptatem suscipit cum consequuntur obcaecati numquam
+                    ullam? Eveniet tenetur culpa molestias officia!</p>
+            </div>
+            <div id="contact"
+                 class="Contact">
+                <h2>Contact</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magnam placeat ut molestias voluptates
+                    officiis blanditiis! Aperiam itaque nemo, nam non quis aliquam, minus quas fugiat cupiditate earum
+                    ex, eaque eveniet aut iusto. Quae fugiat suscipit modi minus velit maiores maxime molestias
+                    accusantium, dolorem laborum voluptatibus nam! Voluptatibus voluptate autem, incidunt quas
+                    cupiditate vero voluptatum tempora, inventore at saepe reiciendis?</p>
+            </div>
+
+        </section>
+        <script src="App.js"></script>
+    </body>
+
+</html>
