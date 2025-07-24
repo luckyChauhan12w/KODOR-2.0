@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Sorting UI</title>
+  </head>
+  <body>
+    <div class="buttons flex gap-4 mt-4">
+      <button
+        class="name bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+      >
+        Name A-Z
+      </button>
+      <button
+        id="age"
+        class="age bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+      >
+        Age
+      </button>
+      <button
+        id="marks"
+        class="marks bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+      >
+        Marks
+      </button>
+    </div>
+
+    <div class="studentsBox flex flex-col gap-4 mt-6"></div>
+
+    <script src="App.js"></script>
+  </body>
+</html>
