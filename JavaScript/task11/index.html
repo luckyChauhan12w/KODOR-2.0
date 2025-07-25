@@ -3,14 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>FormValidation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <form>
-      <input type="text" name="" id="" placeholder="" />
-      <input type="text" name="" id="" />
-      <input type="password" name="" id="" />
-      <button>Submit</button>
+  <body class="bg-black">
+    <form
+      name="MyForm"
+      class="max-w-md mx-auto mt-10 p-6 bg-gray-900 rounded-lg shadow-lg border border-green-500"
+    >
+      <h2
+        class="text-green-400 text-2xl font-mono mb-6 text-center tracking-widest"
+      >
+        LOGIN
+      </h2>
+
+      <input
+        type="text"
+        name="funame"
+        id="username"
+        placeholder="UserName"
+        class="w-full mb-4 px-4 py-2 bg-black text-green-400 rounded font-mono focus:outline-none"
+      />
+      <input
+        type="text"
+        name="femail"
+        id="email"
+        placeholder="Email"
+        class="w-full mb-4 px-4 py-2 bg-black text-green-400 rounded font-mono focus:outline-none"
+      />
+      <input
+        type="password"
+        name="fpassword"
+        id="password"
+        placeholder="Password"
+        class="w-full mb-6 px-4 py-2 bg-black text-green-400 rounded font-mono focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="w-full bg-green-700 text-black font-mono py-2 rounded hover:bg-green-500 transition border border-green-400"
+      >
+        Submit
+      </button>
     </form>
     <script src="App.js"></script>
   </body>
